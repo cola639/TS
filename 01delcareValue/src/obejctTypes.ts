@@ -1,6 +1,6 @@
 //object
 let person0: { name: string } & { age: number }; //equal to let person: { name: string; age: number }
-let person1: { name: string; age?: number };
+let person1: { name: string; age?: number }; // ?: mean choice
 person1 = { name: "john", age: 18 };
 
 //function
@@ -17,26 +17,18 @@ const sum2 = (a: number, b: number): number => {
 };
 
 //array
-let array0: string[];
+let array0: string[]; //equal to let array1 : Array<number>
 array0 = ["1", "2"];
 
-let array1: number[]; //equal to let array1 : Array<number>
+let array1: number[];
 
 //enum
 enum Gender {
   male,
   female,
 }
-
 let person: { name: string; gender: Gender };
 person = {
   name: "John",
   gender: Gender.male,
 };
-
-//type
-type mType = string | number;
-let first: mType;
-let second: mType;
-first = "123";
-second = 123;
