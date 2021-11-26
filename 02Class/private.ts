@@ -6,3 +6,5 @@ class Animal {
 }
 
 new Animal("Cat").name; //error
+const animal = new Animal("Cat");
+console.log(animal.name); //error

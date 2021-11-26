@@ -1,10 +1,10 @@
-import {hi} from './m1';
+import { hi } from "./m1";
 
-function sum(a: number, b: number):number{
-    return  a + b;
+function sum(a: number, b: number): number {
+  return a + b;
 }
 
-var obj = {name:"孙悟空", age:33};
+var obj = { name: "孙悟空", age: 33 };
 
 console.log(obj);
 
@@ -12,10 +12,16 @@ obj.age = 18;
 console.log(obj);
 
 console.log(sum(123, 456));
-console.log('哈哈');
+console.log("哈哈");
 console.log(hi);
 
 let fn = (a: number, b: number) => a + b;
 
-fn(123 , 456);
+fn(123, 456);
 fn(77, 22);
+
+type mType = string | number;
+let first: mType;
+let second: mType;
+first = "123";
+second = 123;

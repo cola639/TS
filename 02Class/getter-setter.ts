@@ -1,4 +1,4 @@
-//before use getter setter
+//1.before use getter setter
 
 // class Employee {
 //   fullName: string;
@@ -11,6 +11,7 @@
 //   console.log(employee.fullName);
 // }
 
+//2.use getter setter
 let passcode = "secret passcode";
 class Employee {
   private _fullName: string;

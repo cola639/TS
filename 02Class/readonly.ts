@@ -10,13 +10,13 @@ class Octopus {
 let dad = new Octopus("Man Strong");
 dad.name = "Man with the 3-piece suit"; // error
 
-//equal to
 class Octopus {
   readonly numberOfLegs: number = 8;
+  constructor(readonly name: string) {}
 
+  //equal to
   // public readonly name: string;
   // constructor(theName: string) {
   //   this.name = theName;
   // }
-  constructor(readonly name: string) {}
 }
