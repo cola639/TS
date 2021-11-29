@@ -1,4 +1,4 @@
-////1
+////printLabel before interface
 function printLabel0(labelledObj: { label: string }) {
   console.log(labelledObj.label);
 }
@@ -6,7 +6,7 @@ function printLabel0(labelledObj: { label: string }) {
 let myObj0 = { size: 10, label: "Size 10 Object" };
 printLabel0(myObj0);
 
-////2
+////printLabel after interface
 interface LabelledValue {
   label: string;
 }
