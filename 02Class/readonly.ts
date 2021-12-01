@@ -1,5 +1,5 @@
+// readonly must in declare or constructor
 class Octopus {
-  //public name:string no error
   public readonly name: string;
   readonly numberOfLegs: number = 8;
   constructor(theName: string) {
@@ -8,15 +8,10 @@ class Octopus {
 }
 
 let dad = new Octopus("Man Strong");
-dad.name = "Man with the 3-piece suit"; // error
+dad.name = "Man with the 3-piece suit"; // error!nameis readonly
 
+//simple declare
 class Octopus {
   readonly numberOfLegs: number = 8;
   constructor(readonly name: string) {}
-
-  //equal to
-  // public readonly name: string;
-  // constructor(theName: string) {
-  //   this.name = theName;
-  // }
 }

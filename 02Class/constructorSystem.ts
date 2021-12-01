@@ -23,4 +23,4 @@ let rhino = new Rhino();
 let employee = new Employee("Bob");
 
 animal = rhino;
-animal = employee;
+animal = employee; //error
