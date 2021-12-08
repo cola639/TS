@@ -1,3 +1,4 @@
+//interface generic
 interface GenericIdentityFn {
   <T>(arg: T): T;
 }

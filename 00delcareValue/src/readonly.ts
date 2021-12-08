@@ -4,4 +4,4 @@ interface Point {
 }
 
 let p1: Point = { x: 10, y: 20 };
-p1.x = 5;
+p1.x = 5; //error

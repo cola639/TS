@@ -1,3 +1,4 @@
+//public(default)
 class Animal {
   public name: string;
   public constructor(theName: string) {

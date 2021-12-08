@@ -1,3 +1,4 @@
+//usage
 class Grid {
   constructor(public scale: number) {}
 

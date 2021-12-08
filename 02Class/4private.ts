@@ -1,3 +1,4 @@
+//private
 class Animal {
   private name: string;
   constructor(theName: string) {

@@ -1,4 +1,4 @@
-//definition
+//usage
 abstract class Animal {
   abstract makeSound(): void;
   move(): void {
@@ -36,4 +36,4 @@ department = new Department(); //error:can not create an instance class
 department = new AccountingDepartment();
 department.printName();
 department.printMeeting();
-department.generateReports(); //error: method is not in abstract class
+department.generateReports(); //error:method is not in abstract class

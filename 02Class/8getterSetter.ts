@@ -11,7 +11,7 @@ if (employee.fullName) {
   console.log(employee.fullName);
 }
 
-//2.use getter setter
+//2.after used getter setter
 let passcode = "secret passcode";
 class Employee {
   private _fullName: string;
