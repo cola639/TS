@@ -11,7 +11,7 @@ let square = <Square>{}
 square.color = 'blue'
 square.sideLength = 10
 
-// interface_extends two or more
+// interface_extends two or more suggest no more than three
 interface Shape {
   color: string
 }

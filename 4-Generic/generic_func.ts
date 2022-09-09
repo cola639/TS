@@ -1,31 +1,39 @@
 // generic before used
-function identity(arg: number): number {
+function identityBefore1(arg: number): number {
   return arg
 }
 
-function identity(arg: any): any {
+function identityBefore2(arg: any): any {
   return arg
 }
 
 // generic after used
-function identity<T>(arg: T): T {
+function identityFunction<T>(arg: T): T {
+  return arg
+}
+
+const identityExpression = function <T>(arg: T): T {
+  return arg
+}
+
+const identityArrow = <T>(arg: T): T => {
   return arg
 }
 
 // generic Array error
 function loggingIdentity<T>(arg: T): T {
-  console.log(arg.length) // Error: T doesn't have .length
+  // console.log(arg.length) // Error: T doesn't have .length
   return arg
 }
 
 // generic Array params
-function loggingIndentity<T>(arg: T[]): T[] {
+function loggingIndentityPassArr1<T>(arg: T[]): T[] {
   console.log(arg.length)
   return arg
 }
 
 // equal to
-function loggingIndentity<T>(arg: Array<T>): Array<T> {
+function loggingIndentityPassArr2<T>(arg: Array<T>): Array<T> {
   console.log(arg.length)
   return arg
 }
